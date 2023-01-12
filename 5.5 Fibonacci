@@ -1,0 +1,5 @@
+import Data.List (unfoldr)
+
+FibonacciFunc (a, b) = Just (a, (b, a + b))
+
+ResultFunc = unfoldr FibonacciFunc (0, 1)
